@@ -8,6 +8,7 @@ RUN apt-get update && \
       cmake \
       git \
       build-essential \
+      qt5-default \
       qtbase5-dev \
       gettext \
       qttools5-dev-tools\
