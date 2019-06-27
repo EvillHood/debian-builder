@@ -22,8 +22,11 @@ RUN apt-get update && \
       clazy \
       libboost-program-options-dev 
 # Install vnc, xvfb in order to create a 'fake' display 
-RUN     apt-get install -y x11vnc xvfb 
+RUN     apt-get install -y x11vnc xvfb twm 
 # map /source to host source data path (used to )
+CMD Xvfb -ac :1 & \
+    x11vnc -display :1 & \
+    twm -display :1 &    
 VOLUME /source
 
 # map /data to host defined data path (used to store data from app)
