@@ -23,7 +23,6 @@ RUN apt-get update && \
       libboost-program-options-dev 
 # Install vnc, xvfb in order to create a 'fake' display 
 RUN     apt-get install -y x11vnc xvfb twm 
-CMD Xvfb -ac :1 &
 # map /source to host source data path (used to )
        
 VOLUME /source
