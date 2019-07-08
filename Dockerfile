@@ -23,7 +23,8 @@ RUN apt-get update && \
       libboost-program-options-dev \
       libqwt-qt5-dev \
       gnuradio-dev \
-      libuhd-dev
+      libuhd-dev \
+      clang
       
 # Install vnc, xvfb in order to create a 'fake' display 
 RUN     apt-get install -y x11vnc xvfb twm 
