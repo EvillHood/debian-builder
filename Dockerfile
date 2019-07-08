@@ -20,7 +20,11 @@ RUN apt-get update && \
       libboost-log-dev \
       libboost-thread-dev \
       clazy \
-      libboost-program-options-dev 
+      libboost-program-options-dev \
+      libqwt-qt5-dev \
+      gnuradio-dev \
+      libuhd-dev
+      
 # Install vnc, xvfb in order to create a 'fake' display 
 RUN     apt-get install -y x11vnc xvfb twm 
 # map /source to host source data path (used to )
