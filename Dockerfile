@@ -6,8 +6,8 @@ MAINTAINER EvillHood
 
 # Build tools
 #############           
-RUN apt-get update && apt-get -y build-essential cmake git 
-RUN apt-get install -y clazy clang clang-tidy
+RUN apt-get update  
+RUN apt-get install -y build-essential cmake git clazy clang clang-tidy
 
 # libraries
 #############
