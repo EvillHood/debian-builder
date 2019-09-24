@@ -18,7 +18,11 @@ RUN apt-get install -y qt5-default
 # Add radio components
 #############
 RUN apt-get install -y libqwt-qt5-dev gnuradio-dev libuhd-dev 
-      
+
+# Add libs for exemples components
+#############
+RUN  apt-get install -y libopencore-amrnb-dev libvo-amrwbenc-dev libopencore-amrwb-dev
+
 # Install vnc, xvfb in order to create a 'fake' display 
 #############
 RUN apt-get install -y x11vnc xvfb twm 
